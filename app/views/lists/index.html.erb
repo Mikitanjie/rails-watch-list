@@ -1,6 +1,9 @@
-<h2>here you can see all the lists</h2>
+<h2>Home Page - here you can see all the lists</h2>
 <% @lists.each do |list| %>
   <p>
-    <%= list.name %>
+     <%= link_to list.name, list %>
   </p>
 <% end %>
+
+
+<%= link_to "Criar uma lista nova", new_list_path %>
